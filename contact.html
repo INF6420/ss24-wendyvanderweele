@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wendy VanderWeele - Portfolio</title>
     <link rel="stylesheet" href ="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,6 @@
             <ul class="nav-menu">
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="aboutme.html"> About Me</a></li>
-                <li><a href="porfolio.html"> My Portfolio</a></li>
                 <li><a href="contact.html"> Contact</a></li>
             </ul>
 
@@ -21,21 +21,42 @@
 
     </header>
     <main>
-        <div><h1> Contact Me</h1>
-        </div>
-        <div class="connection">
-            
-            <p><img src="images/email.png" alt="email image" width="10%" height="auto">
-                Please feel free to contact me at: <a href="mailto:wendyvanderweele@gmail.com">wendyvanderweele@gamil.com</a></p>
-            
-                <p> You can also see my library page at:
-                <a href="http://www.lakeviewspartans.org/Page/524"> Lakeview High School Library</a></p>
-       
-        </div>
         
-        <div>
-            <img class="family" src="images/ZsunflowerminisVANDERWHEELE(2of33).jpg" alt="my family" width="25%" height="auto">
+        <h1> Contact Me</h1>
+
+        <div class="container">
+        <form action="https://formspree.io/f/mkgwnwvj" method="post" class="validate">
+            
+            <p> <h2>Please send me a message and I'll get back to you!</h2></p>
+
+            <label for="name">Your Name:</label>
+            <input name="name" id="name" type="text" class="form-input">
+            
+            <label for="email">Your Email:</label>
+            <input name="email" id="email" type="email" class="form-input" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea name="message" class="form-input" required></textarea>
+            
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div class="connection-info">
+            <div class="connection">
+                
+                <p><img src="images/email.png" alt="email image" width="10%" height="auto">
+                    Please feel free to contact me at: <a href="mailto:wendyvanderweele@gmail.com">wendyvanderweele@gamil.com</a></p>
+                
+                    <p> You can also see my library page at:
+                    <a href="http://www.lakeviewspartans.org/Page/524"> Lakeview High School Library</a></p>
+        
+            </div>
+            
+            <div>
+                <img class="family" src="images/ZsunflowerminisVANDERWHEELE(2of33).jpg" alt="my family">
+            </div>
         </div>
+    </div>
     </main>
     <footer>
         <div class="contact">
